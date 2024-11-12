@@ -85,7 +85,7 @@ export default function Component() {
                 visible: { transition: { staggerChildren: 0.1 } }
               }}
             >
-              {['Cloud Computing', 'Network Administration', 'Linux & Windows Server Administration', 'Shell Scripting & Automation', 'IT Infrastructure Management', 'Cloud Development & DevOps'].map((skill) => (
+              {['Cloud Computing', 'Network Administration', 'Linux/Windows Server Admin', 'Shell Scripting & Automation', 'IT Infrastructure Management', 'Cloud Development & DevOps'].map((skill) => (
                 <motion.div
                   key={skill}
                   className="bg-gray-800 rounded-lg p-3 text-center transition-all duration-300 hover:bg-cyan-700 hover:scale-105 hover:shadow-lg"
