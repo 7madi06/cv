@@ -63,7 +63,7 @@ export default function Component() {
               className="text-xl sm:text-2xl mt-2 transition-colors duration-300"
               // whileHover={{ y: -5 }}
             >
-              Senior IT Administrator
+              IT Support Specialist
             </motion.p>
           </header>
         </AnimatedSection>
