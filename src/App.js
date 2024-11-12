@@ -174,9 +174,9 @@ export default function Component() {
                 <GraduationCap className="text-cyan-400 transition-colors duration-300 hover:text-cyan-300" size={36} />
               </div>
               <div>
-                <h3 className="font-semibold text-xl sm:text-2xl text-cyan-300">BSc in Computer Science</h3>
-                <p className="text-gray-300 text-lg">Tech University</p>
-                <p className="text-cyan-400 mt-2">2009 - 2013</p>
+                <h3 className="font-semibold text-xl sm:text-2xl text-cyan-300">Dts Infrastructure Digitale Option : Cloud Computing</h3>
+                <p className="text-gray-300 text-lg">OFPPT</p>
+                <p className="text-cyan-400 mt-2">2021 - 2023</p>
               </div>
             </motion.div>
           </section>
