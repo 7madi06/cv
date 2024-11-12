@@ -71,9 +71,7 @@ export default function Component() {
         <AnimatedSection>
           <section className="mb-12">
             <p className="text-lg sm:text-xl leading-relaxed">
-              Passionate IT professional with 8+ years of experience in managing complex IT infrastructures. 
-              Skilled in cloud technologies, network security, and system optimization. 
-              Committed to delivering robust and efficient IT solutions.
+            IT Technician specializing in digital infrastructure and cloud computing, currently serving at the Ministry of Interior. Proficient in cloud management (Azure, OpenStack, AWS), network architecture (Cisco), and system optimization in Linux and Windows Server environments. Skilled in automation with Python and PowerShell and experienced in virtualization (Hyper-V, VMware). Eager to enhance tech reliability and continuously expand expertise in this rapidly advancing field.
             </p>
           </section>
         </AnimatedSection>
@@ -87,7 +85,7 @@ export default function Component() {
                 visible: { transition: { staggerChildren: 0.1 } }
               }}
             >
-              {['Network Security', 'Cloud Infrastructure', 'System Administration', 'IT Strategy', 'Troubleshooting', 'Team Leadership'].map((skill) => (
+              {['Cloud Computing', 'Network Administration', 'Linux & Windows Server Administration', 'Shell Scripting & Automation', 'IT Infrastructure Management', 'Cloud Development & DevOps'].map((skill) => (
                 <motion.div
                   key={skill}
                   className="bg-gray-800 rounded-lg p-3 text-center transition-all duration-300 hover:bg-cyan-700 hover:scale-105 hover:shadow-lg"
@@ -110,9 +108,9 @@ export default function Component() {
             <div className="relative">
               <div className="absolute left-4 top-6 bottom-0 w-1 bg-gradient-to-b from-cyan-400 via-cyan-500 to-cyan-600"></div>
               {[
-                { title: 'Senior IT Administrator', company: 'Tech Solutions Inc.', period: '2018 - Present' },
-                { title: 'IT Systems Specialist', company: 'DataCorp', period: '2015 - 2018' },
-                { title: 'Junior IT Admin', company: 'StartUp Innovations', period: '2013 - 2015' },
+                { title: 'IT Technician', company: 'Ministry of Interior (Morocco)', period: '2024 - Present' },
+                { title: 'IT Technician', company: 'J2HB', period: '2024 - 2024' },
+                { title: 'Customer Support Agent', company: 'Webhelp', period: '2023 - 2024' },
               ].map((job, index) => (
                 <motion.div
                   key={index}
