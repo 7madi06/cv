@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { motion, useAnimation } from 'framer-motion'
 import { Briefcase, GraduationCap, Mail, MapPin, Phone } from 'lucide-react'
+import { Analytics } from "@vercel/analytics/react"
 
 const AnimatedSection = ({ children }) => {
   const controls = useAnimation()
@@ -108,9 +109,18 @@ export default function Component() {
             <div className="relative">
               <div className="absolute left-4 top-6 bottom-0 w-1 bg-gradient-to-b from-cyan-400 via-cyan-500 to-cyan-600"></div>
               {[
-                { title: 'IT Technician', company: 'Ministry of Interior (Morocco)', period: '2024 - Present' },
-                { title: 'IT Technician', company: 'J2HB', period: '2024 - 2024' },
-                { title: 'Customer Support Agent', company: 'Webhelp', period: '2023 - 2024' },
+                { title: 'IT Technician', company: 'Ministry of Interior (Morocco)', period: '2024 - Present', 
+                  exp1: 'Led team of 10+ IT professionals in maintaining and optimizing company infrastructure', 
+                  exp2: 'Implemented cloud-based solutions resulting in 30% cost reduction', 
+                  exp3: 'Improved system uptime from 99.9% to 99.99% through proactive monitoring and maintenance' },
+                { title: 'IT Technician', company: 'J2HB', period: '2024 - 2024', 
+                  exp1: 'Led team of 10+ IT professionals in maintaining and optimizing company infrastructure', 
+                  exp2: 'Implemented cloud-based solutions resulting in 30% cost reduction', 
+                  exp3: 'Improved system uptime from 99.9% to 99.99% through proactive monitoring and maintenance'  },
+                { title: 'Customer Support Agent', company: 'Webhelp', period: '2023 - 2024', 
+                  exp1: 'Led team of 10+ IT professionals in maintaining and optimizing company infrastructure', 
+                  exp2: 'Implemented cloud-based solutions resulting in 30% cost reduction', 
+                  exp3: 'Improved system uptime from 99.9% to 99.99% through proactive monitoring and maintenance'  },
               ].map((job, index) => (
                 <motion.div
                   key={index}
@@ -120,7 +130,7 @@ export default function Component() {
                   transition={{ delay: index * 0.2 }}
                 >
                   <motion.div
-                    className="absolute left-0 top-1 w-9 h-9 bg-gray-900 rounded-full flex items-center justify-center"
+                    className="absolute left-0 top-6 w-9 h-9 bg-gray-900 rounded-full flex items-center justify-center"
                     style={{
                       boxShadow: '0 0 0 4px #111827, 0 0 0 6px #22d3ee',
                     }}
@@ -129,10 +139,10 @@ export default function Component() {
                     <Briefcase className="text-cyan-400" size={20} />
                   </motion.div>
                   <motion.div
-                    className="bg-gray-800 rounded-lg p-6 shadow-md transition-all duration-300 hover:bg-gray-750"
+                    className="bg-gray-800 rounded-2xl p-6 shadow-md transition-all duration-300 hover:bg-gray-750"
                     whileHover={{ 
                       y: -5, 
-                      boxShadow: "0 10px 20px rgba(6, 182, 212, 0.2)",
+                      boxShadow: "0 35px 60px -15px rgba(6, 182, 212, 0.2)",
                       transition: { duration: 0.2 }
                     }}
                   >
@@ -147,13 +157,13 @@ export default function Component() {
                       }}
                     >
                       <motion.li variants={{ hidden: { opacity: 0, x: -20 }, visible: { opacity: 1, x: 0 } }}>
-                        Led team of 10+ IT professionals in maintaining and optimizing company infrastructure
+                        {job.exp1}
                       </motion.li>
                       <motion.li variants={{ hidden: { opacity: 0, x: -20 }, visible: { opacity: 1, x: 0 } }}>
-                        Implemented cloud-based solutions resulting in 30% cost reduction
+                        {job.exp2}
                       </motion.li>
                       <motion.li variants={{ hidden: { opacity: 0, x: -20 }, visible: { opacity: 1, x: 0 } }}>
-                        Improved system uptime from 99.9% to 99.99% through proactive monitoring and maintenance
+                        {job.exp3}
                       </motion.li>
                     </motion.ul>
                   </motion.div>
@@ -209,6 +219,7 @@ export default function Component() {
             </motion.div>
           </footer>
         </AnimatedSection>
+        <Analytics />
       </div>
     </div>
   )
