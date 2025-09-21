@@ -200,7 +200,7 @@ export default function Component() {
                 whileHover={{ scale: 1.1 }}
               >
                 <Mail className="mr-2" size={24} />
-                youssefsaddouki4@gmail.com
+                contact@ysaddouki.dpdns.org
               </motion.div>
               <motion.div
                 className="flex items-center transition-colors duration-300 hover:text-cyan-400"
